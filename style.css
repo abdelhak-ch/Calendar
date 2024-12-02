@@ -1,0 +1,107 @@
+:root {
+  --first-color: #eee;
+  --second-color: #000;
+  --thord-color: #fff;
+  --sunday-color: #000aff;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.countiner {
+  background: var(--first-color);
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.head {
+  background: var(--first-color);
+  border-radius: 8px 8px 0 0;
+}
+
+
+h1 {
+  color: var(--second-color);
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  font-size: 24px;
+  padding: 30px 15px 0;
+  position: relative;
+}
+
+h1 #before {
+  content: "\f053";
+  color: var(--second-color);
+  padding: 0 5px;
+  padding-top: 0;
+  position: absolute;
+  top: 31px;
+  left: -25px;
+}
+h1 span.month {
+  padding-right: 10px;
+}
+h1 #after {
+  content: "\f054";
+  color: var(--second-color);
+  padding: 0 5px;
+  padding-top: 0;
+  position: absolute;
+  top: 31px;
+  right: -25px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 0 5px;
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+li {
+  list-style: none;
+  color: var(--second-color);
+  font-size: 12px;
+}
+hr.first {
+  border: 1.3px solid var(--thord-color);
+  margin: 0 10px;
+}
+
+.body {
+  padding: 10px;
+}
+
+/* body */
+
+.body .cnt{
+  
+  display: grid;
+  grid-template-columns: repeat( 7, auto ) ;
+  gap: 2px;
+  background: var(--thord-color);
+}
+
+.body .cnt div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--first-color);
+  height: 45px;
+  
+}
+
+.body .cnt div:first-child {
+  grid-column: span 1;
+}
+
+ul li:first-child, .sun {
+   color: var(--sunday-color);
+ }
